@@ -11,3 +11,7 @@ Upstream PR: https://github.com/pingdotgg/t3code/pull/11061 (Fixes #11054)
 
 ## Harness learning
 Anything that *persists* a runtime binary path must not use the realpath of a package-manager symlink. Same class of bug as pinning Python venv or nvm paths into launchd without a stable shim.
+
+## Review follow-up (`cebee968`)
+- Versioned `node@*` → `$prefix/opt/$formula/bin/node` (keg-only).
+- Prefer argv0 only when it realpath/inode-matches execPath (blocks `exec -a` spoof).
