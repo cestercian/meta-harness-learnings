@@ -15,6 +15,7 @@ Harnesses are the runtime membrane around a model: tools, persistence, refinemen
 | **OpenClaw** | Multi-channel agent product (OSS we already contribute to) | [openclaw/openclaw](https://github.com/openclaw/openclaw) | MIT; in-use contribution target |
 | **Prime Agent** | Self-improving RLM + Continual Harness | [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent) | Discussion-first; PRs only if vouched |
 | **T3 Code** | Control plane for coding agents | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | Orchestrates Claude/Codex/Cursor/Grok/OpenCode |
+| **Bridge** | Native macOS control room for coding agents | [Atharva-Kanherkar/bridge-harness](https://github.com/Atharva-Kanherkar/bridge-harness) | Peer to T3; Apple Silicon–first; active PRs |
 | **OrcaReplay** | Record / replay / fork agent runs | [Continuum-AI-Corp/OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) | Capture harness for debugging agents |
 | **OrcaCode Review** | PR review harness + merge gate | [Continuum-AI-Corp/Orca-Code-Review](https://github.com/Continuum-AI-Corp/Orca-Code-Review) | Cheap→strong cascade via OrcaRouter |
 | **OrcaRouter-Lite** | Self-hosted LLM router | [Continuum-AI-Corp/OrcaRouter-Lite](https://github.com/Continuum-AI-Corp/OrcaRouter-Lite) | Gateway / BYOK |
