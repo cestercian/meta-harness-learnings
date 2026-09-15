@@ -41,4 +41,4 @@ Local Windows sat at **23** failures while Linux CI was green. Cost was verifica
 - https://github.com/Continuum-AI-Corp/OrcaReplay/pull/70
 - https://github.com/Continuum-AI-Corp/OrcaReplay/pull/78
 - https://github.com/Continuum-AI-Corp/OrcaReplay/pull/69
-- Related: `learnings/2026-09-11-orca-fail-loud-and-capture.md` (#65 agent-structure capture still open)
+- Related: `learnings/2026-09-11-orca-fail-loud-and-capture.md`, `learnings/2026-09-15-orca-agent-structure-and-empty-capture.md` (#65 merged)

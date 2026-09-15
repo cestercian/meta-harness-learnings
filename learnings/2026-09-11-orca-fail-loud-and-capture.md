@@ -8,7 +8,7 @@ Maintainer posture on Continuum Orca* aligns with (and generalizes) our TLS `--m
 
 ## Capture layers beyond the HTTP proxy
 - OrcaReplay `#58`: record **which origin answered** each model call (not just orca’s local proxy address). A leftover gateway in `~/.orca/config.json` was invisible in traces.
-- OrcaReplay `#65` (open): sixth capture layer for **agent structure the proxy cannot see** (handoffs / input guardrails measured first, then recorded). Direction: proxy I/O alone is not a full harness transcript.
+- OrcaReplay `#65` (**merged 2026-09-14**): sixth capture layer for **agent structure the proxy cannot see** (handoffs / input guardrails). Follow-ups `#83`/`#84`: empty capture must announce; viewer rows must exist for the new events. See `learnings/2026-09-15-orca-agent-structure-and-empty-capture.md`.
 
 ## Carry-forward
 Prefer patches that make unsupported or partial paths loud, and prefer telemetry that answers “who answered / what structure ran” without needing paid router keys for the repro.
@@ -18,4 +18,4 @@ Prefer patches that make unsupported or partial paths loud, and prefer telemetry
 - https://github.com/Continuum-AI-Corp/OrcaReplay/pull/58
 - https://github.com/Continuum-AI-Corp/OrcaReplay/pull/65
 - https://github.com/Continuum-AI-Corp/Orca-Code-Review/pull/52
-- Related prior note: `learnings/2026-09-10-orcareplay-tls-model.md`
+- Related: `learnings/2026-09-10-orcareplay-tls-model.md`, `learnings/2026-09-15-orca-agent-structure-and-empty-capture.md`

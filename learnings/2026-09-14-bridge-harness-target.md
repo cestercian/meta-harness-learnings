@@ -10,12 +10,15 @@ Site: https://bridge.agentclash.dev
 
 Active contribution stream (open as of 2026-09-14), not drive-by:
 
-| PR | Focus |
-| --- | --- |
-| [#567](https://github.com/Atharva-Kanherkar/bridge-harness/pull/567) | GitHub links in transcript: ask open-in-pane vs browser; prose autolink |
-| [#628](https://github.com/Atharva-Kanherkar/bridge-harness/pull/628) | Native macOS usage menu + multi-provider overview (limits / cost / stale) |
-| [#633](https://github.com/Atharva-Kanherkar/bridge-harness/pull/633) | CI smoke: packaged macOS daemon lifecycle (credential-free, isolated) |
-| [#638](https://github.com/Atharva-Kanherkar/bridge-harness/pull/638) | Automate Bridge release pipeline (Release Please + signed/notarized publish) |
+| PR | Status | Focus |
+| --- | --- | --- |
+| [#567](https://github.com/Atharva-Kanherkar/bridge-harness/pull/567) | open (as of 2026-09-14 note) | GitHub links in transcript: ask open-in-pane vs browser; prose autolink |
+| [#628](https://github.com/Atharva-Kanherkar/bridge-harness/pull/628) | **merged** | Native macOS usage menu + multi-provider overview (limits / cost / stale) |
+| [#633](https://github.com/Atharva-Kanherkar/bridge-harness/pull/633) | **merged** (closes `#555`) | CI smoke: packaged macOS daemon lifecycle (credential-free, isolated) |
+| [#638](https://github.com/Atharva-Kanherkar/bridge-harness/pull/638) | open | Automate Bridge release pipeline (Release Please + signed/notarized publish) |
+| [#639](https://github.com/Atharva-Kanherkar/bridge-harness/pull/639) | **merged** | Drop retired usage widget; Cursor optional-metadata + stale-cache refresh |
+
+Follow-up detail: `learnings/2026-09-15-bridge-packaged-smoke-and-usage-cache.md`.
 
 ## Contrib posture (early signal)
 
