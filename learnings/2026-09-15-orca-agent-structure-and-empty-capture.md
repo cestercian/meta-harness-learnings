@@ -6,11 +6,11 @@ Upstream Continuum since the 2026-09-11 / 2026-09-14 notes. Not our PRs — post
 
 `feat: record the agent structure a proxy cannot see` merged. First layer that records what orca was *told* (SDK tracing: which agent owned a turn, that a handoff happened and from whom, input guardrails) rather than only HTTP I/O the proxy observed. Proxy-alone transcripts stay incomplete for multi-agent / guardrail runs.
 
-## Empty capture must say so (`#83`, open)
+## Empty capture must say so (`#83`, merged 2026-09-15)
 
 Agent-spans bootstrap used `except ImportError: return` when `orcareplay-openai-agents` was missing. Measured: same handoff agent with vs without the package — without, the layer comes back empty and looks like a successful quiet capture. Same fail-loud family as TLS `--model`, flag-value fallbacks, and scrub under-count: “captured nothing” is not success when the layer could not run.
 
-## Viewer must grow with the layer (`#84`, open)
+## Viewer must grow with the layer (`#84`, merged 2026-09-15)
 
 `#65` put structure events into the trace; `buildTimeline` had no row types for the three events a proxy cannot produce (handoff / agent ownership / guardrail). The layer exists and is invisible — capture without display is half a harness.
 
