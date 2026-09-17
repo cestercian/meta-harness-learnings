@@ -38,3 +38,7 @@ Append dated files under `learnings/YYYY-MM-DD-slug.md`. Prefer facts with links
 ## License
 
 MIT
+
+## Next-tier map (2026-09-17)
+
+See `learnings/2026-09-17-harness-map-expansion.md` for OpenHands, Cline, Goose, Aider, SWE-agent, Codex CLI, browser-use, and framework-adjacent control planes.
