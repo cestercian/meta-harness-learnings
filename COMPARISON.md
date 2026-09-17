@@ -11,3 +11,9 @@
 | Contrib posture | PRs + ClawSweeper | Discussions first; vouched + ENG/RES Linear | Active issue triage (`accepted`) | Fail-loud flags/scrub; vision + agent-structure capture | Fail-closed merge gates | Active; packaged-daemon smoke + usage-cache discipline landing |
 
 Update this table when a contribution proves a cell wrong.
+
+## Also in orbit (2026-09-17)
+
+- **NeMo Agent Toolkit** — NVIDIA multi-agent toolkit (retries, tools, LangChain/ADK adapters). Detail: `harnesses/nemo-agent-toolkit.md`.
+- **OpenCode** — anomalyco/opencode coding agent. Detail: `harnesses/opencode.md`.
+
