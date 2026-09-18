@@ -8,7 +8,7 @@
 | Memory / skills | Product memory; ClawSweeper automation | Continual Harness (ρ,G,K,M) + `/refine` | Provider-native + orchestration | Replay artifacts | Rubric / policy in router | Project prefs / knowledge (product) |
 | Multi-agent | Teams / channels | `rlm.spawn` children; one `list_agents` roster | Many providers, thread-per-branch | Fork onto other models | Cheap then strong model cascade | Side-by-side providers / fleet |
 | UI / control | Product UX + bots | Agents View / ACP | Web, desktop, mobile | CLI (`orca record` …) | GitHub Action + console | Native macOS (usage menu, panes) |
-| Contrib posture | PRs + ClawSweeper | Discussions first; vouched + ENG/RES Linear | Active issue triage (`accepted`) | Fail-loud flags/scrub; vision + agent-structure capture | Fail-closed merge gates | Active; packaged-daemon smoke + usage-cache discipline landing |
+| Contrib posture | PRs + ClawSweeper | Discussions first; vouched + ENG/RES Linear | Active issue triage (`accepted`) | Fail-loud flags/scrub; vision + agent-structure capture | Fail-closed merge gates; one authoritative run for reactions/clean verdicts | Active; packaged-daemon smoke + usage-cache discipline landing |
 
 Update this table when a contribution proves a cell wrong.
 
