@@ -21,6 +21,7 @@ Harnesses are the runtime membrane around a model: tools, persistence, refinemen
 | **OrcaReplay** | Record / replay / fork agent runs | [Continuum-AI-Corp/OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) | Capture harness for debugging agents |
 | **OrcaCode Review** | PR review harness + merge gate | [Continuum-AI-Corp/Orca-Code-Review](https://github.com/Continuum-AI-Corp/Orca-Code-Review) | Cheap→strong cascade via OrcaRouter |
 | **OrcaRouter-Lite** | Self-hosted LLM router | [Continuum-AI-Corp/OrcaRouter-Lite](https://github.com/Continuum-AI-Corp/OrcaRouter-Lite) | Gateway / BYOK |
+| **NemoClaw** | Agents inside OpenShell + managed inference | [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Secondary NVIDIA surface; **5 open PR cap** |
 | **sandbox-runtime** | OS-level FS/network sandbox for agents | [anthropics/sandbox-runtime](https://github.com/anthropics/sandbox-runtime) | Forked as `cestercian/sandbox-runtime` |
 
 Detail pages live under [`harnesses/`](./harnesses/). Cross-cutting comparison: [`COMPARISON.md`](./COMPARISON.md). Dated notes: [`learnings/`](./learnings/).
@@ -29,7 +30,7 @@ Detail pages live under [`harnesses/`](./harnesses/). Cross-cutting comparison: 
 
 We treat **OpenClaw** as the open-source harness already in orbit (prior upstream PRs; ClawSweeper review culture; Telegram/outbound delivery edge cases). Supporting forks in the same workspace: `sandbox-runtime`, `claude-agent-sdk-python`, `agent-framework`, `agent-skills-kit`.
 
-Contribution *process* harness (how we ship): Cursor cloud agents on forks → parent review → upstream PR → GitHub babysit routines that escalate every human/bot comment and self-delete on merge/close. Rules: commits authored as `cestercian` only; never AI `Co-authored-by`; never open upstream before parent review.
+Contribution *process* harness (how we ship): Cursor cloud agents on forks may open the upstream PR (fork → upstream base); parent reviews after and babysits. GitHub babysit routines escalate every human/bot comment (not only @mentions) and self-delete on merge/close. Rules: commits authored as `cestercian` only; never AI `Co-authored-by`; strip Cursor footers; fork-only PR descriptions must not mention the issue (`Fixes`/`Closes` only on the upstream PR).
 
 ## Contributing to this notes repo
 

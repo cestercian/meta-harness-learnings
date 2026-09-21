@@ -16,4 +16,4 @@ Update this table when a contribution proves a cell wrong.
 
 - **NeMo Agent Toolkit** — NVIDIA multi-agent toolkit (retries, tools, LangChain/ADK adapters). Detail: `harnesses/nemo-agent-toolkit.md`.
 - **OpenCode** — anomalyco/opencode coding agent. Detail: `harnesses/opencode.md`.
-
+- **NemoClaw** — NVIDIA agents-in-OpenShell (5 open PR cap; local routes prefer direct tool disclosure). Detail: `harnesses/nemoclaw.md`.
