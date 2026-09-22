@@ -7,7 +7,7 @@
 
 ## Notes for contributors
 
-- Generated MCP-add policies must allow the credential-resolution curl probe or CONNECT 403s self-deny registration (#12104).
+- MCP credential probe: use the adapter runtime (Node fetch / urllib), not curl on the generated binary allowlist; `#12104` superseded by maintainer salvage `#12175` merged (closes #12065).
 - Backups: do not swallow permission-denied dirs then claim a full archive (#12108).
 - Local Ollama/vLLM: default progressive tool disclosure to **direct** — nested tool_call/Tool Search breaks those models (#12110).
 - Policy remove verification: strip `_provider_*` keys from OpenShell `--base` readback before compare (#12111).
