@@ -11,4 +11,4 @@
 - Backups: do not swallow permission-denied dirs then claim a full archive (#12108).
 - Local Ollama/vLLM: default progressive tool disclosure to **direct** — nested tool_call/Tool Search breaks those models (#12110).
 - Policy remove verification: strip `_provider_*` keys from OpenShell `--base` readback before compare (#12111).
-- OpenClaw `devices approve` local fallback must `exit(0)` or NemoClaw `connect` hangs (#12109).
+- OpenClaw `devices approve` local fallback: drain stdout/stderr then `exit(0)` after Approved so leftover gateway handles do not hang `nemoclaw connect`. `#12109` superseded by maintainer salvage `#12178` merged (closes #12064).

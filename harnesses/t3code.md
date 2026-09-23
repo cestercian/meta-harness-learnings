@@ -16,5 +16,6 @@
 - Windows `.cmd`/`.bat`: single command string + empty args under `shell: true` to avoid DEP0190 (#12863 / #12797).
 - Antigravity wrappers: unwrap to real ACP `.exe` + matching `localharness_external`; do not hang on `cmd.exe /c` (#12878 / #12752).
 - Codex app-server: per-message byte ceiling on JSONL fragments, not only queue depth (#12889 / #12884).
+- Codex app-server fragment ceiling: count UTF-8 bytes (`TextEncoder`), not UTF-16 code units after `decodeText` (#12889).
 - Provider update icons: identical glyphs must open the same Update popover; copy stays a distinct control (#12890 / #12886).
 - Diff file tree: file↔dir prefix collision → flat list fallback (#12906 / #12887).
