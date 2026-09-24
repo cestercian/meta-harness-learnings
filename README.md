@@ -22,6 +22,7 @@ Harnesses are the runtime membrane around a model: tools, persistence, refinemen
 | **OrcaCode Review** | PR review harness + merge gate | [Continuum-AI-Corp/Orca-Code-Review](https://github.com/Continuum-AI-Corp/Orca-Code-Review) | Cheap→strong cascade via OrcaRouter |
 | **OrcaRouter-Lite** | Self-hosted LLM router | [Continuum-AI-Corp/OrcaRouter-Lite](https://github.com/Continuum-AI-Corp/OrcaRouter-Lite) | Gateway / BYOK |
 | **NemoClaw** | Agents inside OpenShell + managed inference | [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Secondary NVIDIA surface; **5 open PR cap** |
+| **Omnigent** | Agent harness with Codex-native probe homes | [omnigent-ai/omnigent](https://github.com/omnigent-ai/omnigent) | Credential symlink refresh on each probe |
 | **sandbox-runtime** | OS-level FS/network sandbox for agents | [anthropics/sandbox-runtime](https://github.com/anthropics/sandbox-runtime) | Forked as `cestercian/sandbox-runtime` |
 
 Detail pages live under [`harnesses/`](./harnesses/). Cross-cutting comparison: [`COMPARISON.md`](./COMPARISON.md). Dated notes: [`learnings/`](./learnings/).
