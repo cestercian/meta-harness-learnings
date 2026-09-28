@@ -16,4 +16,8 @@
 - Native menu refresh: rebind hosted SwiftUI card and layout before the next frame so quota rows stay painted (`#704` merged).
 - Agent Fleet: terminal launch failures toast via decoded daemon JSON (`#701`); move-to-tab uses `ExternalLink` not download (`#693`).
 - Nightly signed DMG `nightly-YYYY-MM-DD` at 01:00 IST; skip when no merges that calendar day; never become updater Latest (`#705` merged).
-- **See also:** `learnings/2026-09-14-bridge-harness-target.md`, `learnings/2026-09-15-bridge-packaged-smoke-and-usage-cache.md`, `learnings/2026-09-23-bridge-usage-replay-nemoclaw-salvage-opencode.md`, `learnings/2026-09-24-t3-multiserver-bridge-browser-omnigent.md`
+- Worker model picker: Base UI `Select` re-activates the already-selected value; pin handlers must no-op on same-value or automatic workers silently pin (`#717` merged).
+- Codex catalog: reasoning capability and `supportedEffortLevels` must ship together so the composer effort control appears (`#724` open/approved).
+- Codex updater: run the official installer with `CODEX_NON_INTERACTIVE=1`, install deadline + process-group cleanup, closable dialog, bounded runtime refresh (`#725` open).
+- Nightly DMG: backup cron later the same UTC day is safe when plan skips existing `nightly-YYYY-MM-DD` tag/release or no-merge IST days (`#726` merged).
+- **See also:** `learnings/2026-09-14-bridge-harness-target.md`, `learnings/2026-09-15-bridge-packaged-smoke-and-usage-cache.md`, `learnings/2026-09-23-bridge-usage-replay-nemoclaw-salvage-opencode.md`, `learnings/2026-09-24-t3-multiserver-bridge-browser-omnigent.md`, `learnings/2026-09-28-hermes-wire-bridge-codex-openclaw-prove.md`

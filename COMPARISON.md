@@ -18,3 +18,6 @@ Update this table when a contribution proves a cell wrong.
 - **OpenCode** — anomalyco/opencode coding agent. Detail: `harnesses/opencode.md`.
 - **NemoClaw** — NVIDIA agents-in-OpenShell (5 open PR cap; local routes prefer direct tool disclosure). Detail: `harnesses/nemoclaw.md`.
 - **Omnigent** — omnigent-ai/omnigent (Codex-native probe homes; refresh credential symlinks each probe). Detail: `harnesses/omnigent.md`.
+- **Hermes Agent** — NousResearch/hermes-agent (custom OpenAI-compat thinking wire; uv lock checks pin lockfile registries). Detail: `harnesses/hermes-agent.md`.
+- **JevHarness** — TianyuCodings/JevHarness (Windows-portable file locks for JevClient import; `#2` open).
+- **foreman** — VisionForge-OU/foreman (skill changelog reviewer identity; `#24` open).
