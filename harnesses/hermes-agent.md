@@ -14,3 +14,4 @@
 ## See also
 
 - `learnings/2026-09-28-hermes-wire-bridge-codex-openclaw-prove.md`
+- `learnings/2026-09-30-bridge-dev-updater-mcp-locale-atlas.md`

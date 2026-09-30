@@ -21,3 +21,6 @@ Update this table when a contribution proves a cell wrong.
 - **Hermes Agent** — NousResearch/hermes-agent (custom OpenAI-compat thinking wire; uv lock checks pin lockfile registries). Detail: `harnesses/hermes-agent.md`.
 - **JevHarness** — TianyuCodings/JevHarness (Windows-portable file locks for JevClient import; `#2` open).
 - **foreman** — VisionForge-OU/foreman (skill changelog reviewer identity; `#24` open).
+- **ATLAS** — inferstep/ATLAS (adaptive test-time learning / eval driver; absolutize suite roots before Docker grader mounts; `#276` merged).
+- **mcp-memory-service** — doobidoo/mcp-memory-service (agent memory MCP; `MCP_LOCALE` must win over harvest aliases; do not freeze locale behind import-time caches; `#1382` open).
+- **HiveGate** — hivegate-ai/hivegate (Agno-based agent runtime; docs hygiene on env defaults; `#76` open).
