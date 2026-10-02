@@ -8,7 +8,7 @@
 | Memory / skills | Product memory; ClawSweeper automation | Continual Harness (ρ,G,K,M) + `/refine` | Provider-native + orchestration | Replay artifacts | Rubric / policy in router | Project prefs / knowledge (product) |
 | Multi-agent | Teams / channels | `rlm.spawn` children; one `list_agents` roster | Many providers, thread-per-branch | Fork onto other models | Cheap then strong model cascade | Side-by-side providers / fleet |
 | UI / control | Product UX + bots | Agents View / ACP | Web, desktop, mobile | CLI (`orca record` …) | GitHub Action + console | Native macOS (usage menu, panes) |
-| Contrib posture | PRs + ClawSweeper (prove-on-main / after-fix; idle≠keepalive) | Discussions first; vouched + ENG/RES Linear | Active issue triage (`accepted`) | Fail-loud flags/scrub; vision + agent-structure capture | Fail-closed merge gates; one authoritative run for reactions/clean verdicts | Active; packaged-daemon smoke + usage-cache discipline landing |
+| Contrib posture | PRs + ClawSweeper (prove-on-main / after-fix; idle≠keepalive) | Discussions first; vouched + ENG/RES Linear | Active triage (`accepted`); UI needs before/after evidence (Macroscope≠merge) | Fail-loud flags/scrub; vision + agent-structure capture | Fail-closed merge gates; one authoritative run for reactions/clean verdicts | Active; packaged-daemon smoke + usage-cache discipline landing |
 
 Update this table when a contribution proves a cell wrong.
 
@@ -22,5 +22,6 @@ Update this table when a contribution proves a cell wrong.
 - **JevHarness** — TianyuCodings/JevHarness (Windows-portable file locks for JevClient import; `#2` open).
 - **foreman** — VisionForge-OU/foreman (skill changelog reviewer identity; `#24` open).
 - **ATLAS** — inferstep/ATLAS (adaptive test-time learning / eval driver; absolutize suite roots before Docker grader mounts; `#276` merged).
-- **mcp-memory-service** — doobidoo/mcp-memory-service (agent memory MCP; `MCP_LOCALE` must win over harvest aliases; do not freeze locale behind import-time caches; `#1382` open).
+- **mcp-memory-service** — doobidoo/mcp-memory-service (agent memory MCP; `MCP_LOCALE` must win over harvest aliases; do not freeze locale behind import-time caches; `#1382` merged).
 - **HiveGate** — hivegate-ai/hivegate (Agno-based agent runtime; docs hygiene on env defaults; `#76` open).
+- **Sotto** — getsotto/sotto (secrets TUI; DCO `Signed-off-by` on every commit; `#473`/`#474` open).

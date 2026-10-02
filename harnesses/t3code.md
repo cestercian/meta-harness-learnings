@@ -4,7 +4,7 @@
 - **Site:** https://t3.codes/
 - **Role:** Open-source control plane for coding agents (Claude Code, Codex, Cursor, Grok, OpenCode, …).
 - **Shape:** Node server + clients (web/desktop/mobile); providers as drivers; orchestration over WS.
-- **Contribution posture:** Active bug triage with labels like `accepted` / `via-triage`. Fast merge when scoped. Prefer the documented fix path triage already named (e.g. `$T3CODE_HOME/service.env` over preserving unknown unit/plist `Environment=` keys — see #12633 / #12626).
+- **Contribution posture:** Active bug triage with labels like `accepted` / `via-triage`. Fast merge when scoped **and** evidence matches [CONTRIBUTING verification](https://github.com/pingdotgg/t3code/blob/main/CONTRIBUTING.md#verification). UI PRs need before/after screenshots (recordings when motion matters) attached on the PR — Macroscope approve alone does not stop verification closure (`#12890` / `#12906` closed 2026-10-01). Prefer the documented fix path triage already named (e.g. `$T3CODE_HOME/service.env` over preserving unknown unit/plist `Environment=` keys — see #12633 / #12626).
 
 ## Notes for contributors
 
@@ -17,6 +17,6 @@
 - Antigravity wrappers: unwrap to real ACP `.exe` + matching `localharness_external`; do not hang on `cmd.exe /c` (#12878 / #12752).
 - Codex app-server: per-message byte ceiling on JSONL fragments, not only queue depth (#12889 / #12884).
 - Codex app-server fragment ceiling: count UTF-8 bytes (`TextEncoder`), not UTF-16 code units after `decodeText` (#12889).
-- Provider update icons: identical glyphs must open the same Update popover; copy stays a distinct control (#12890 / #12886).
-- Diff file tree: file↔dir prefix collision → flat list fallback (#12906 / #12887).
+- Provider update icons: identical glyphs must open the same Update popover; copy stays a distinct control (#12890 closed for missing UI evidence / #12886).
+- Diff file tree: file↔dir prefix collision → flat list fallback (#12906 closed for missing UI evidence / #12887).
 - Multi-server shared state dir: reconcile projects recovered events locally but only republishes events this dispatch appended — never peer `thread.turn-start-requested` (#13295 / #13275).
