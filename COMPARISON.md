@@ -17,7 +17,7 @@ Update this table when a contribution proves a cell wrong.
 - **NeMo Agent Toolkit** — NVIDIA multi-agent toolkit (retries, tools, LangChain/ADK adapters). Detail: `harnesses/nemo-agent-toolkit.md`.
 - **OpenCode** — anomalyco/opencode coding agent. Detail: `harnesses/opencode.md`.
 - **NemoClaw** — NVIDIA agents-in-OpenShell (5 open PR cap; local routes prefer direct tool disclosure; backup restore scopes by `.sandbox` marker). Detail: `harnesses/nemoclaw.md`.
-- **Omnigent** — omnigent-ai/omnigent (Codex-native probe homes; refresh credential symlinks each probe). Detail: `harnesses/omnigent.md`.
+- **Omnigent** — omnigent-ai/omnigent (Codex-native probe homes; refresh credential symlinks each probe; repro agent + `omni-resolve-agent` auto-close PRs whose linked issue was already fixed). Detail: `harnesses/omnigent.md`.
 - **Hermes Agent** — NousResearch/hermes-agent (custom OpenAI-compat thinking wire; uv lock checks pin lockfile registries). Detail: `harnesses/hermes-agent.md`.
 - **JevHarness** — TianyuCodings/JevHarness (Windows-portable file locks for JevClient import; `#2` open).
 - **foreman** — VisionForge-OU/foreman (skill changelog reviewer identity; `#24` open).

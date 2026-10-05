@@ -11,15 +11,16 @@
 - Anonymous tools: keep empty anonymous starts out of visible activity until identity, output, or a terminal result; keep recognized subagent cards (`#682`).
 - Degraded replay: unreadable stored entries become `entry.invalid` carriers at the original sequence (`status: degraded`) so pagination and reconnect continue (`#682`).
 - CI: immutable committed `fake-gh.sh` fixtures avoid Linux races that spawn a newly written executable (`#682`).
-- Supervised composer dictation / sherpa-onnx (`#683`) is still a draft until live mic smoke.
+- Supervised composer dictation / sherpa-onnx (`#683`) merged 2026-10-04.
 - Browser dock: native tabs + element picker; child pages have no Bridge command permissions; page content is sanitized untrusted prompt data (`#702` merged).
 - Native menu refresh: rebind hosted SwiftUI card and layout before the next frame so quota rows stay painted (`#704` merged).
 - Agent Fleet: terminal launch failures toast via decoded daemon JSON (`#701`); move-to-tab uses `ExternalLink` not download (`#693`).
 - Nightly signed DMG `nightly-YYYY-MM-DD` at 01:00 IST; skip when no merges that calendar day; never become updater Latest (`#705` merged).
 - Beta channel (`#738` merged): opt-in Settings → Updates; stable uses plugin-updater / GitHub Latest; beta uses a separate signed nightly feed (`check_nightly_update` / `install_nightly_update`) with stamped `{max}.patch+1-nightly.YYYYMMDD`. Keep the install cache across rechecks — clearing it at check start leaves Install as a no-op while the toast stays up.
-- Dev-binary updater (`#745` open): Tauri macOS installs into the executable parent when outside an `.app`, so refuse updater installs from unbundled `target/debug` (hide Install in Vite/dev UI + native guards). Install the toast's channel/version; rechecks must not clear the install handle mid-flight.
+- Dev-binary updater (`#745` merged): Tauri macOS installs into the executable parent when outside an `.app`, so refuse updater installs from unbundled `target/debug` (hide Install in Vite/dev UI + native guards). Install the toast's channel/version; rechecks must not clear the install handle mid-flight.
 - Worker model picker: Base UI `Select` re-activates the already-selected value; pin handlers must no-op on same-value or automatic workers silently pin (`#717` merged).
 - Codex catalog: reasoning capability and `supportedEffortLevels` must ship together so the composer effort control appears (`#724` merged).
 - Codex updater: run the official installer with `CODEX_NON_INTERACTIVE=1`, install deadline + process-group cleanup, closable dialog, bounded runtime refresh (`#725` merged).
 - Nightly DMG: backup cron later the same UTC day is safe when plan skips existing `nightly-YYYY-MM-DD` tag/release or no-merge IST days (`#726` merged).
 - **See also:** `learnings/2026-09-14-bridge-harness-target.md`, `learnings/2026-09-15-bridge-packaged-smoke-and-usage-cache.md`, `learnings/2026-09-23-bridge-usage-replay-nemoclaw-salvage-opencode.md`, `learnings/2026-09-24-t3-multiserver-bridge-browser-omnigent.md`, `learnings/2026-09-28-hermes-wire-bridge-codex-openclaw-prove.md`, `learnings/2026-09-29-bridge-beta-nightly-updater.md`, `learnings/2026-09-30-bridge-dev-updater-mcp-locale-atlas.md`
+- Release pipeline (`#638` merged 2026-10-02): one Release Please PR, serialized sign/notarize/DMG-smoke/publish on protected main, acceptance jobs isolated from signing creds, short-lived GitHub App tokens, lock sync runs main's tooling not PR code.

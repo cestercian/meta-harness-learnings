@@ -19,4 +19,4 @@
 - Codex app-server fragment ceiling: count UTF-8 bytes (`TextEncoder`), not UTF-16 code units after `decodeText` (#12889).
 - Provider update icons: identical glyphs must open the same Update popover; copy stays a distinct control (#12890 closed for missing UI evidence / #12886).
 - Diff file tree: file↔dir prefix collision → flat list fallback (#12906 closed for missing UI evidence / #12887).
-- Multi-server shared state dir: reconcile projects recovered events locally but only republishes events this dispatch appended — never peer `thread.turn-start-requested` (#13295 / #13275).
+- Multi-server shared state dir: reconcile projects recovered events locally but only republishes events this dispatch appended — never peer `thread.turn-start-requested` (#13295 merged 2026-10-02 / #13275).
