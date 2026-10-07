@@ -2,7 +2,7 @@
 
 - Repo: https://github.com/NVIDIA/NeMo-Agent-Toolkit
 - Role: open-source library for connecting and optimizing teams of AI agents (workflows, tools, LLM/embedder/memory adapters, retries).
-- Contrib: Apache-2.0; follow `docs/source/resources/contributing/`. Prefer clear unit repros. Related: NeMo-Agent-Toolkit-UI, NeMo-Relay. Commits need `Signed-off-by`.
+- Contrib: Apache-2.0; follow `docs/source/resources/contributing/`. Prefer clear unit repros. Related: NeMo-Agent-Toolkit-UI, NeMo-Relay. Commits need `Signed-off-by`. External PR CI runs only after a maintainer comments `/ok to test <sha>` for that exact commit, so run `pre-commit run --all-files` (yapf etc.) locally before each push (#2226).
 
 ## Notes for contributors
 
