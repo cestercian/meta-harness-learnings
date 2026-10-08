@@ -16,7 +16,7 @@ Update this table when a contribution proves a cell wrong.
 
 - **NeMo Agent Toolkit** — NVIDIA multi-agent toolkit (retries, tools, LangChain/ADK adapters). Detail: `harnesses/nemo-agent-toolkit.md`.
 - **OpenCode** — anomalyco/opencode coding agent. Detail: `harnesses/opencode.md`.
-- **NemoClaw** — NVIDIA agents-in-OpenShell (5 open PR cap; local routes prefer direct tool disclosure; backup restore scopes by `.sandbox` marker). Detail: `harnesses/nemoclaw.md`.
+- **NemoClaw** — NVIDIA agents-in-OpenShell (5 open PR cap; local routes prefer direct tool disclosure; backup restore scopes by `.sandbox` marker; CA bundle must not be group-writable). Detail: `harnesses/nemoclaw.md`.
 - **Omnigent** — omnigent-ai/omnigent (Codex-native probe homes; refresh credential symlinks each probe; repro agent + `omni-resolve-agent` auto-close PRs whose linked issue was already fixed). Detail: `harnesses/omnigent.md`.
 - **Hermes Agent** — NousResearch/hermes-agent (custom OpenAI-compat thinking wire; uv lock checks pin lockfile registries). Detail: `harnesses/hermes-agent.md`.
 - **JevHarness** — TianyuCodings/JevHarness (Windows-portable file locks for JevClient import; `#2` open).
@@ -24,4 +24,4 @@ Update this table when a contribution proves a cell wrong.
 - **ATLAS** — inferstep/ATLAS (adaptive test-time learning / eval driver; absolutize suite roots before Docker grader mounts; `#276` merged).
 - **mcp-memory-service** — doobidoo/mcp-memory-service (agent memory MCP; `MCP_LOCALE` must win over harvest aliases; do not freeze locale behind import-time caches; `#1382` merged).
 - **HiveGate** — hivegate-ai/hivegate (Agno-based agent runtime; docs hygiene on env defaults; `#76` open).
-- **Sotto** — getsotto/sotto (secrets TUI; DCO `Signed-off-by` on every commit; `#473`/`#474` open).
+- **Sotto** — getsotto/sotto (secrets TUI; DCO `Signed-off-by` on every commit; `#473` merged; `#474` rebased after `#516` `StatusKind` API drift).

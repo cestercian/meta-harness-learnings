@@ -14,4 +14,4 @@
 - OpenClaw `devices approve` local fallback: drain stdout/stderr then `exit(0)` after Approved so leftover gateway handles do not hang `nemoclaw connect`. `#12109` superseded by maintainer salvage `#12178` merged (closes #12064).
 
 - Backup restore: each backup writes a `.sandbox` marker; `restore <name>` without a timestamp only picks matching markers and fails if none match. Legacy unmarked backups need an explicit timestamp (`#12539`).
-
+- Corporate CA (`NEMOCLAW_CORPORATE_CA_BUNDLE`): bundle must not be group-writable; `0664` fails onboarding at step 6/8 with a CA-named permission error, `0644`/`0600` work (v0.0.131, from the `#12059` re-check). `#12059` closed as no longer reproducing; re-verify old claims on the latest release before working them.
