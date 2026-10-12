@@ -8,8 +8,8 @@
 ## Notes for contributors
 
 - MCP credential probe: use the adapter runtime (Node fetch / urllib), not curl on the generated binary allowlist; `#12104` superseded by maintainer salvage `#12175` merged (closes #12065).
-- Backups: do not swallow permission-denied dirs then claim a full archive (#12108). On the unsafe-entry early return, **union** nested `failedDirs` / `failedDirReasons` with declared roots — do not replace the collected list (mixed unreadable + disallowed symlink).
-- Local Ollama/vLLM: default progressive tool disclosure to **direct** — nested tool_call/Tool Search breaks those models (#12110).
+- Backups: do not swallow permission-denied dirs then claim a full archive (#12108, closed). `#12340` replaced selective backup/audit with complete native-home/workspace capture and retired the snapshot CLI; incomplete archives fail and are removed before publication. The early-return **union** lesson still applies to collectors elsewhere.
+- Local Ollama/vLLM: fresh managed OpenClaw defaults to **direct** tool disclosure — nested tool_call/Tool Search breaks those models. Landed via maintainer salvage `#12968` (Cestercian co-author); original `#12110` closed. Explicit CLI/env and existing sandbox choices stay authoritative.
 - Policy remove verification: strip `_provider_*` keys from OpenShell `--base` readback before compare (#12111).
 - OpenClaw `devices approve` local fallback: drain stdout/stderr then `exit(0)` after Approved so leftover gateway handles do not hang `nemoclaw connect`. `#12109` superseded by maintainer salvage `#12178` merged (closes #12064).
 

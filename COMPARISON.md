@@ -8,15 +8,15 @@
 | Memory / skills | Product memory; ClawSweeper automation | Continual Harness (ρ,G,K,M) + `/refine` | Provider-native + orchestration | Replay artifacts | Rubric / policy in router | Project prefs / knowledge (product) |
 | Multi-agent | Teams / channels | `rlm.spawn` children; one `list_agents` roster | Many providers, thread-per-branch | Fork onto other models | Cheap then strong model cascade | Side-by-side providers / fleet |
 | UI / control | Product UX + bots | Agents View / ACP | Web, desktop, mobile | CLI (`orca record` …) | GitHub Action + console | Native macOS (usage menu, panes) |
-| Contrib posture | PRs + ClawSweeper (prove-on-main / after-fix; liveness + separate progress deadline; negative-control proof) | Discussions first; vouched + ENG/RES Linear | Active triage (`accepted`); UI needs before/after evidence (Macroscope≠merge) | Fail-loud flags/scrub; vision + agent-structure capture | Fail-closed merge gates; one authoritative run for reactions/clean verdicts | Active; near-daily Release Please releases; topology ≠ credential policy (fail closed) |
+| Contrib posture | PRs + ClawSweeper (prove-on-main / after-fix; liveness + separate progress deadline; negative-control proof) | Discussions first; vouched + ENG/RES Linear | Active triage (`accepted`); UI needs before/after evidence (Macroscope≠merge); **disclose model+harness** or stale PRs get cleaned up | Fail-loud flags/scrub; vision + agent-structure capture | Fail-closed merge gates; one authoritative run for reactions/clean verdicts | Active; near-daily Release Please releases; topology ≠ credential policy (fail closed) |
 
 Update this table when a contribution proves a cell wrong.
 
 ## Also in orbit (2026-09-17)
 
 - **NeMo Agent Toolkit** — NVIDIA multi-agent toolkit (retries, tools, LangChain/ADK adapters). Detail: `harnesses/nemo-agent-toolkit.md`.
-- **OpenCode** — anomalyco/opencode coding agent. Detail: `harnesses/opencode.md`.
-- **NemoClaw** — NVIDIA agents-in-OpenShell (5 open PR cap; local routes prefer direct tool disclosure; backup restore scopes by `.sandbox` marker; CA bundle must not be group-writable; backup audit early returns must keep nested failure reasons). Detail: `harnesses/nemoclaw.md`.
+- **OpenCode** — anomalyco/opencode coding agent (V1 PRs rejected after V2 promote; port to current `main`). Detail: `harnesses/opencode.md`.
+- **NemoClaw** — NVIDIA agents-in-OpenShell (5 open PR cap; fresh local OpenClaw defaults to direct tool disclosure via `#12968`; backup restore scopes by `.sandbox` marker; CA bundle must not be group-writable; selective backup audit superseded by `#12340` complete capture). Detail: `harnesses/nemoclaw.md`.
 - **Omnigent** — omnigent-ai/omnigent (Codex-native probe homes; refresh credential symlinks each probe; repro agent + `omni-resolve-agent` auto-close PRs whose linked issue was already fixed). Detail: `harnesses/omnigent.md`.
 - **Hermes Agent** — NousResearch/hermes-agent (custom OpenAI-compat thinking wire; uv lock checks pin lockfile registries). Detail: `harnesses/hermes-agent.md`.
 - **JevHarness** — TianyuCodings/JevHarness (Windows-portable file locks for JevClient import; `#2` open).
@@ -24,4 +24,4 @@ Update this table when a contribution proves a cell wrong.
 - **ATLAS** — inferstep/ATLAS (adaptive test-time learning / eval driver; absolutize suite roots before Docker grader mounts; `#276` merged).
 - **mcp-memory-service** — doobidoo/mcp-memory-service (agent memory MCP; `MCP_LOCALE` must win over harvest aliases; do not freeze locale behind import-time caches; `#1382` merged).
 - **HiveGate** — hivegate-ai/hivegate (Agno-based agent runtime; docs hygiene on env defaults; `#76` open).
-- **Sotto** — getsotto/sotto (secrets TUI; DCO `Signed-off-by` on every commit; `#473`/`#474` merged; `#474` needed rebase for `#516` `StatusKind` drift). NemoClaw backup audits: early-return paths must union nested failure reasons (#12108).
+- **Sotto** — getsotto/sotto (secrets TUI; DCO `Signed-off-by` on every commit; `#473`/`#474` merged; `#493` open — same `#516` `notice.message` drift as `#474`).
