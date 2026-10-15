@@ -13,10 +13,10 @@
 - ACP drivers: keep redacted stderr on process exit; do not collapse to opaque session-closed (#12625 / #12451).
 - Claude `homePath`: empty / `~/.claude` / absolute must share one continuation key like the CLI (#12624 / #12616).
 - Pending questions: park typed custom answers onto the thread draft when an option is clicked (#12577 / #12569).
-- Windows `.cmd`/`.bat`: single command string + empty args under `shell: true` to avoid DEP0190 (#12863 / #12797).
+- Windows `.cmd`/`.bat`: single command string + empty args under `shell: true` to avoid DEP0190 (#12863 / #12797). Confirmed: maintainer shipped this shape in `#19385` (merged 2026-10-14) with cross-spawn byte-match proof; see `learnings/2026-10-15-*`.
 - Antigravity wrappers: unwrap to real ACP `.exe` + matching `localharness_external`; do not hang on `cmd.exe /c` (#12878 / #12752).
 - Codex app-server: per-message byte ceiling on JSONL fragments, not only queue depth (#12889 / #12884).
 - Codex app-server fragment ceiling: count UTF-8 bytes (`TextEncoder`), not UTF-16 code units after `decodeText` (#12889).
 - Provider update icons: identical glyphs must open the same Update popover; copy stays a distinct control (#12890 closed for missing UI evidence / #12886).
-- Diff file tree: file↔dir prefix collision → flat list fallback (#12906 closed for missing UI evidence / #12887).
+- Diff file tree: file↔dir prefix collision → flat list fallback (#12906 closed for missing UI evidence / #12887). Also reproduces dir→symlink (`120000`) on nightly 2026-10-14, incl. GitLab MRs.
 - Multi-server shared state dir: reconcile projects recovered events locally but only republishes events this dispatch appended — never peer `thread.turn-start-requested` (#13295 merged 2026-10-02 / #13275).

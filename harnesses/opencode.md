@@ -12,3 +12,4 @@
 - Cross-link with T3/Bridge when the bug is control-plane ↔ agent boundary.
 - Issues filed against the early v2 pre-release (mid-2026) may be obsolete: `#36766` (truncated OpenAI tool-call args) was closed as not planned on 2026-10-08. Check version line and reproduce on current `main` before claiming.
 - After the V2 promote, open PRs against the old V1 line are rejected (`thdxr`: port to V2). Examples closed 2026-10-10: `#50048`, `#50050`, `#49710`, `#49706`. Do not reopen a V1 head; retarget current V2 `main`.
+- The **OpenCode Beta** VS Code extension (`sst-dev.opencode-v2`) is unmaintained; use `sst-dev.opencode` v1.0.0 with the V2 CLI. `#50043` closed 2026-10-14; don't target the Beta extension.

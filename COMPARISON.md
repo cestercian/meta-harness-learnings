@@ -15,7 +15,7 @@ Update this table when a contribution proves a cell wrong.
 ## Also in orbit (2026-09-17)
 
 - **NeMo Agent Toolkit** — NVIDIA multi-agent toolkit (retries, tools, LangChain/ADK adapters; DCO needs author email == sign-off email). Detail: `harnesses/nemo-agent-toolkit.md`.
-- **OpenCode** — anomalyco/opencode coding agent (V1 PRs rejected after V2 promote; port to current `main`). Detail: `harnesses/opencode.md`.
+- **OpenCode** — anomalyco/opencode coding agent (V1 PRs rejected after V2 promote; port to current `main`; Beta VS Code extension unmaintained). Detail: `harnesses/opencode.md`.
 - **NemoClaw** — NVIDIA agents-in-OpenShell (5 open PR cap; fresh local OpenClaw defaults to direct tool disclosure via `#12968`; policy-remove verify via replay `#12983`; aging PRs land as maintainer replays with co-author credit; backup restore scopes by `.sandbox` marker; CA bundle must not be group-writable; selective backup audit superseded by `#12340` complete capture). Detail: `harnesses/nemoclaw.md`.
 - **Omnigent** — omnigent-ai/omnigent (Codex-native probe homes; refresh credential symlinks each probe; repro agent + `omni-resolve-agent` auto-close PRs whose linked issue was already fixed). Detail: `harnesses/omnigent.md`.
 - **Hermes Agent** — NousResearch/hermes-agent (custom OpenAI-compat thinking wire; uv lock checks pin lockfile registries). Detail: `harnesses/hermes-agent.md`.
