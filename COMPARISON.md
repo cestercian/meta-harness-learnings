@@ -8,14 +8,14 @@
 | Memory / skills | Product memory; ClawSweeper automation | Continual Harness (ρ,G,K,M) + `/refine` | Provider-native + orchestration | Replay artifacts | Rubric / policy in router | Project prefs / knowledge (product) |
 | Multi-agent | Teams / channels | `rlm.spawn` children; one `list_agents` roster | Many providers, thread-per-branch | Fork onto other models | Cheap then strong model cascade | Side-by-side providers / fleet |
 | UI / control | Product UX + bots | Agents View / ACP | Web, desktop, mobile | CLI (`orca record` …) | GitHub Action + console | Native macOS (usage menu, panes) |
-| Contrib posture | PRs + ClawSweeper (prove-on-main / after-fix; liveness + separate progress deadline; negative-control proof) | Discussions first; vouched + ENG/RES Linear | Active triage (`accepted`); UI needs before/after evidence (Macroscope≠merge); **disclose model+harness** or stale PRs get cleaned up | Fail-loud flags/scrub; vision + agent-structure capture | Fail-closed merge gates; one authoritative run for reactions/clean verdicts | Active; near-daily Release Please releases; topology ≠ credential policy (fail closed) |
+| Contrib posture | PRs + ClawSweeper (prove-on-main / after-fix; liveness + separate progress deadline; negative-control proof) | Discussions first; vouched + ENG/RES Linear | Active triage (`accepted`); UI needs before/after evidence (Macroscope≠merge); **disclose model+harness** or stale PRs get cleaned up; aging PRs land as maintainer takeovers with credit | Fail-loud flags/scrub; vision + agent-structure capture | Fail-closed merge gates; one authoritative run for reactions/clean verdicts | Active; near-daily Release Please releases; topology ≠ credential policy (fail closed) |
 
 Update this table when a contribution proves a cell wrong.
 
 ## Also in orbit (2026-09-17)
 
 - **NeMo Agent Toolkit** — NVIDIA multi-agent toolkit (retries, tools, LangChain/ADK adapters; DCO needs author email == sign-off email; external CI via `/ok to test <sha>`, land via `/merge`; #2226 merged). Detail: `harnesses/nemo-agent-toolkit.md`.
-- **OpenCode** — anomalyco/opencode coding agent (V1 PRs rejected after V2 promote; port to current `main`; Beta VS Code extension unmaintained). Detail: `harnesses/opencode.md`.
+- **OpenCode** — anomalyco/opencode coding agent (V1 PRs rejected after V2 promote; port to current `main`; Beta VS Code extension unmaintained; PRs >1 month with <2 positive reactions auto-closed). Detail: `harnesses/opencode.md`.
 - **NemoClaw** — NVIDIA agents-in-OpenShell (5 open PR cap; fresh local OpenClaw defaults to direct tool disclosure via `#12968`; policy-remove verify via replay `#12983`; aging PRs land as maintainer replays with co-author credit; backup restore scopes by `.sandbox` marker; CA bundle must not be group-writable; selective backup audit superseded by `#12340` complete capture). Detail: `harnesses/nemoclaw.md`.
 - **Omnigent** — omnigent-ai/omnigent (Codex-native probe homes; refresh credential symlinks each probe; repro agent + `omni-resolve-agent` auto-close PRs whose linked issue was already fixed). Detail: `harnesses/omnigent.md`.
 - **Hermes Agent** — NousResearch/hermes-agent (custom OpenAI-compat thinking wire; uv lock checks pin lockfile registries). Detail: `harnesses/hermes-agent.md`.
