@@ -7,7 +7,7 @@
 - **Gotchas:** Unrelated flakes in compact node suites; ClawSweeper wants real channel proof for some delivery paths; keep changes scoped and evidence-backed.
 - **Contribution tips:** Prefer issue→PR with repro; expect bot review markers; babysit comments aggressively. Merges are executed by `roboclaw-bot` once the latest durable ClawSweeper verdict clears; maintainers trigger `@clawsweeper re-review` themselves (can take many passes), so no need to ping during that loop.
 - **Prove-on-main:** if a new lifecycle regression already passes on unmodified main (and captured runtime stays healthy through the refused path), do not land the production change without a concrete repro — ClawSweeper and humans will block (`#158348`).
-- **Stale bot:** `openclaw-barnacle` marks PRs stale after ~2 weeks without a push (marker keyed on head SHA), even when they are `status: needs proof`. Keep-alive = rebase onto main + rerun focused suites + push, not a bump comment (`#158348`, 2026-10-17/18).
+- **Stale bot:** `openclaw-barnacle` (v2 marker, `barnacle-stale:v2 ... lane=unassigned head=<sha>`) marks PRs stale after **7 days** without qualifying human activity and may close them as not planned 7 days later; a human update or new head resets it, maintainers can add `no-stale`/`bad-barnacle`. `status: needs proof` does not protect. Keep-alive = rebase onto main + rerun focused suites + push, at least weekly (`#158348`, 2026-10-17/18, re-marked 2026-10-27).
 - Twilio Say fallback without media streams still needs a redacted after-speak call trace before merge (`#158357`).
 
 ## Idle / path gotchas (2026-10-01)
