@@ -25,3 +25,4 @@ Update this table when a contribution proves a cell wrong.
 - **mcp-memory-service** — doobidoo/mcp-memory-service (agent memory MCP; `MCP_LOCALE` must win over harvest aliases; do not freeze locale behind import-time caches; `#1382` merged).
 - **HiveGate** — hivegate-ai/hivegate (Agno-based agent runtime; docs hygiene on env defaults; `#76` open).
 - **Sotto** — getsotto/sotto (secrets TUI; DCO `Signed-off-by` on every commit; `#473`/`#474`/`#493` merged; maintainer mutation-checks regression tests and prefers regular-file blockers over permission bits; rebase after `#516` `notice.message` drift even when GitHub says mergeable).
+- **Autohand code-cli** — autohandai/code-cli (terminal coding agent; custom-provider `/models` check now warn-and-confirm for unlisted router aliases, still fails closed on auth/connectivity; `#676` merged). Detail: `learnings/2026-10-29-autohand-custom-provider-models-list-advisory.md`.
