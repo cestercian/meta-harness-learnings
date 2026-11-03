@@ -28,3 +28,4 @@
 - Orchestrator notices (`#818` merged): each worker notice costs a model turn; levels `all`/`actionable`/`results-only`, one classified choke point, 30s coalescing, failures never suppressed, orchestrator told filtering exists.
 - Context lens (`#775` merged): with tool search, deferred MCP tools cost about their name per turn; sum only `isLoaded` tools from `getContextUsage().mcpTools[]`.
 - Release Please now cutting near-daily stable releases (0.7.0 on 10-03, 0.9.0 on 10-05). See `learnings/2026-10-06-orcarouter-stacked-budget-bridge-credential-policy.md`.
+- **Stale bot (seen 2026-11-02):** `github-actions` marks issues stale after 30 days without activity and closes them 14 days later; owner tracking issues (`#369`) are not exempt. Our `#404` was marked on 2026-11-02.
