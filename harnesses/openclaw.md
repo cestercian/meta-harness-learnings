@@ -16,4 +16,4 @@
 - Landed shape (2026-10-06): `#162018` was superseded by maintainer `#165983`, which keeps the documented connection-liveness watchdog (every valid chunk resets it) and adds a separate model-progress deadline at 2x the idle window. Do not change the meaning of a documented watchdog; add a second timer.
 - `#165983` is the evidence template for `status: needs proof`: production-only negative control (tests unchanged, production files reverted to a named `origin/main` SHA, regressions fail for the intended reason) plus a real local HTTP/SSE trace with tiny windows.
 - Windows session publication: strip `\\?\` extended-length prefixes before comparing SQLite DB paths to selected store paths (`#162033`); merged 2026-10-03 by `roboclaw-bot` after maintainer-driven ClawSweeper re-review loops.
-
+- Voice-call Twilio Say-fallback greeting/early-hangup fix (`#158357`): closed by `roboclaw-bot` 2026-11-05 and re-landed upstream as `#193137` (`486a0bdd`) with signed-webhook regression tests. Closed ≠ rejected: the bot may re-land outside fixes in its own PR.
