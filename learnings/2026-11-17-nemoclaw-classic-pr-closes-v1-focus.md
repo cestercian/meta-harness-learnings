@@ -2,7 +2,7 @@
 
 ## What happened
 
-- `NVIDIA/NemoClaw#12342` (docs: drain the Jira Node probe response so the integration-policy example exits) was opened 2025-09-25, had green CI and two polite nudges (Oct 22, Nov 10 tagging the reviewer), and got no review.
+- `NVIDIA/NemoClaw#12342` (docs: drain the Jira Node probe response so the integration-policy example exits) was opened 2026-09-25, had green CI and two polite nudges (Oct 22, Nov 10 tagging the reviewer), and got no review.
 - On 2026-11-16 19:50 UTC `wscurran` closed it unmerged: *"We're focusing development on NemoClaw V1, so we're closing this Classic PR without merging."*
 - No code objection: the close is a product-line triage, the same shape as OpenCode's V1→V2 promote closes (2026-10-12 note).
 
