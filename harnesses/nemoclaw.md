@@ -3,7 +3,7 @@
 - Repo: https://github.com/NVIDIA/NemoClaw
 - Role: run agents inside OpenShell with managed inference (local Ollama/vLLM and cloud routes).
 - Related: [OpenShell](https://github.com/NVIDIA/OpenShell) (secondary unless asked); pairs with NeMo Agent Toolkit when working NVIDIA surfaces.
-- Contrib: **hard cap of 5 open PRs** — surplus opens are auto-closed by `github-actions`. Land or close before opening the next. Prefer scoped fail-loud fixes with live CLI/policy tests. Aging correct PRs often land as a maintainer replay on current `main` with co-author credit (`#12968`, `#12983`), so keep the regression test minimal and sharp.
+- Contrib: **hard cap of 5 open PRs** — surplus opens are auto-closed by `github-actions`. Land or close before opening the next. Prefer scoped fail-loud fixes with live CLI/policy tests. Aging correct PRs often land as a maintainer replay on current `main` with co-author credit (`#12968`, `#12983`), so keep the regression test minimal and sharp. **Since 2026-11-16 maintainers close pre-V1 ("Classic") PRs unmerged while focusing on NemoClaw V1** (`#12342`); target V1 surfaces only (see learnings/2026-11-17-nemoclaw-classic-pr-closes-v1-focus.md).
 
 ## Notes for contributors
 
@@ -13,5 +13,5 @@
 - Policy remove verification: compare OpenShell readback through the same `_provider_*` stripping boundary used before writes, while still failing on any missing/changed operator-owned rule. Landed via maintainer replay `#12983` (Cestercian co-author); original `#12111` closed, fixes #12048.
 - OpenClaw `devices approve` local fallback: drain stdout/stderr then `exit(0)` after Approved so leftover gateway handles do not hang `nemoclaw connect`. `#12109` superseded by maintainer salvage `#12178` merged (closes #12064).
 
-- Backup restore: each backup writes a `.sandbox` marker; `restore <name>` without a timestamp only picks matching markers and fails if none match. Legacy unmarked backups need an explicit timestamp (`#12539`).
+- Backup restore: each backup writes a `.sandbox` marker; `restore <name>` without a timestamp only picks matching markers and fails if none match. Legacy unmarked backups need an explicit timestamp (`#12539`, still open; at risk of a Classic close).
 - Corporate CA (`NEMOCLAW_CORPORATE_CA_BUNDLE`): bundle must not be group-writable; `0664` fails onboarding at step 6/8 with a CA-named permission error, `0644`/`0600` work (v0.0.131, from the `#12059` re-check). `#12059` closed as no longer reproducing; re-verify old claims on the latest release before working them.
