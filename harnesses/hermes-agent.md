@@ -10,8 +10,10 @@
 - When sharing Anthropic adaptive helpers onto the OpenAI-compat path: gate early returns on a **non-empty** adaptive payload (haiku falls through to `reasoning_effort`); add every emitted key (`output_config`) to strip-retry sets; keep thinking-off floor/memoisation reachable.
 - Lock verification: ambient `UV_DEFAULT_INDEX` / `UV_INDEX_URL` must not steal `uv lock --check`. Feed registries from `uv.lock` as `--index`; do not only `env.pop` (breaks mirror-only / air-gapped indexes). Windows fakes need `.bat` shims for `CreateProcess` (`#123116`).
 - Desktop package.json: declare imports used by onboarding cards (e.g. `lucide-react`); avoid lockfile churn from regenerating on the wrong npm major (`#123053`).
+- Kanban workspace cleanup: scanners must reuse the canonical board identity rule (`_dir_holds_board`: valid slug + `board.json`, as `list_boards` does) so reserved `boards/_archived/` and db-only stubs are skipped, while a real board with an unreadable db still fails closed (defers) (`#160077` for `#160064`).
 
 ## See also
 
 - `learnings/2026-09-28-hermes-wire-bridge-codex-openclaw-prove.md`
 - `learnings/2026-09-30-bridge-dev-updater-mcp-locale-atlas.md`
+- `learnings/2026-11-26-hermes-kanban-cleanup-board-identity-rule.md`
